@@ -62,8 +62,7 @@ msg = userInfo + '\n' + msg
 # It can be used with other frameworks to enhance the formatting of text.
 ```
 # Note on Usage with Telegram Bot libraries
-When using the generated text with Telegram bot libraries, the text must be parsed using HTML parsing mode in order to properly render the formatting tags.
-the below code once part of telethon bot please pay attention to await bot.send_message(event.chat_id, msg, parse_mode="html")  
+When using Telegram bot libraries to generate text, it is important to parse the text using HTML parsing mode. This is necessary in order to properly render the formatting tags. In the code snippet provided, which is part of a telethon bot, please pay attention to the usage of `await bot.send_message(event.chat_id, msg, parse_mode="html")`  
 ```python
 @bot.on(events.NewMessage(pattern="/start"))
 async def handler(event):
@@ -82,14 +81,14 @@ async def handler(event):
 ```
 # Functions
 * add_tags(tag, text): Adds opening and closing tags around a text
-* Bold(text): Returns text wrapped in <b> tags
-* Italic(text): Returns text wrapped in <i> tags
-* Mono(text): Returns text wrapped in <pre> tags
-* Strikethrough(text): Returns text wrapped in <s> tags
-* Underline(text): Returns text wrapped in <u> tags
+* Bold(text): Returns text wrapped in `<b>` tags
+* Italic(text): Returns text wrapped in `<i>` tags
+* Mono(text): Returns text wrapped in `<pre>` tags
+* Strikethrough(text): Returns text wrapped in `<s>` tags
+* Underline(text): Returns text wrapped in `<u>` tags
 * CreateLink(text, link): Returns text as a hyperlink
-* Hashtag(text): Returns text prefixed with #
-* Mention(text): Returns text prefixed with @
+* Hashtag(text): Returns text prefixed with `#`
+* Mention(text): Returns text prefixed with `@`
 * inlineMention(text, id): Returns text as inline mention with id
 * INIsection(section, description): Returns formatted INI section
 
