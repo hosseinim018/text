@@ -86,3 +86,28 @@ def Mention(text: str) -> str:
 
 def inlineMention(text: str, id:int) -> str:
     return f'<a href="tg://user?id={id}">{text}</a>'
+
+def INIsection(section: str, description: Union[str, List[str]]) -> str:
+    """
+    Returns a string representation of an INI section.
+
+    Parameters:
+    section (str): The name of the section.
+    description (str or list): The description of the section. If the description is a list,
+        each element will be joined with a newline character.
+
+    Returns:
+    str: The formatted string representation of the section.
+
+    Example:
+    >>> INIsection('Section1', 'This is section 1')
+    '[Section1]\nThis is section 1'
+
+    Example:
+    >>> INIsection('Section2', ['Line 1', 'Line 2', 'Line 3'])
+    '[Section2]\nLine 1\nLine 2\nLine 3'
+    """
+    if isinstance(description, list):
+        return f'[{section}]\n' + '\n'.join(description)
+    else:
+        return f"[{section}]\n{description}"
