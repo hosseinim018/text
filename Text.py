@@ -52,3 +52,18 @@ def CreateLink(text: str, link: str) -> str:
     """
     return f'<a href="{link}">{text}</a>'
 
+def Hashtag(text: str) -> str:
+    """
+    Adds a hashtag symbol before the given text.
+
+    Parameters:
+    text (str): The text to which the hashtag symbol is added.
+
+    Returns:
+    str: The text with the hashtag symbol added.
+
+    Example:
+    >>> Hashtag('AI')
+    '#AI'
+    """
+    return "#" + text
