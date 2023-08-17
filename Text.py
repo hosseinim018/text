@@ -22,3 +22,7 @@ def Spoiler(text: str) -> str:
 
 def Bold(text: str) -> str:
     return add_tags('b', text)
+
+def Italic(text: str) -> str:
+    return add_tags('i', text)
+
