@@ -81,18 +81,18 @@ async def handler(event):
         await bot.send_message(event.chat_id, msg, parse_mode="html")
 ```
 # Functions
-```add_tags(tag, text): Adds opening and closing tags around a text
-Bold(text): Returns text wrapped in <b> tags
-Italic(text): Returns text wrapped in <i> tags
-Mono(text): Returns text wrapped in <pre> tags
-Strikethrough(text): Returns text wrapped in <s> tags
-Underline(text): Returns text wrapped in <u> tags
-CreateLink(text, link): Returns text as a hyperlink
-Hashtag(text): Returns text prefixed with #
-Mention(text): Returns text prefixed with @
-inlineMention(text, id): Returns text as inline mention with id
-INIsection(section, description): Returns formatted INI section
-```
+* add_tags(tag, text): Adds opening and closing tags around a text
+* Bold(text): Returns text wrapped in <b> tags
+* Italic(text): Returns text wrapped in <i> tags
+* Mono(text): Returns text wrapped in <pre> tags
+* Strikethrough(text): Returns text wrapped in <s> tags
+* Underline(text): Returns text wrapped in <u> tags
+* CreateLink(text, link): Returns text as a hyperlink
+* Hashtag(text): Returns text prefixed with #
+* Mention(text): Returns text prefixed with @
+* inlineMention(text, id): Returns text as inline mention with id
+* INIsection(section, description): Returns formatted INI section
+
 # Contributing
 If you would like to contribute to this project, please feel free to submit a pull request. Make sure to follow the coding style and include tests for any new functionality.
 
