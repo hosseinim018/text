@@ -83,3 +83,6 @@ def Mention(text: str) -> str:
     '@JohnDoe'
     """
     return "@" + text
+
+def inlineMention(text: str, id:int) -> str:
+    return f'<a href="tg://user?id={id}">{text}</a>'
