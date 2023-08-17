@@ -16,3 +16,7 @@ def add_tags(tag: str, text: str) -> str:
     '<i>Python<i>'
     """
     return f"<{tag}>{text}</{tag}>"
+
+def Spoiler(text: str) -> str:
+    return add_tags('tg-spoiler', text)
+
