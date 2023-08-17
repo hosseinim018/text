@@ -30,4 +30,7 @@ def Mono(text: str) -> str:
     # return f'<pre>{text}</pre>'
     return add_tags('pre', text)
 
+def Strikethrough(text: str) -> str:
+    return add_tags('s', text)
+
 
