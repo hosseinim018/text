@@ -20,3 +20,5 @@ def add_tags(tag: str, text: str) -> str:
 def Spoiler(text: str) -> str:
     return add_tags('tg-spoiler', text)
 
+def Bold(text: str) -> str:
+    return add_tags('b', text)
