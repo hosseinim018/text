@@ -26,3 +26,8 @@ def Bold(text: str) -> str:
 def Italic(text: str) -> str:
     return add_tags('i', text)
 
+def Mono(text: str) -> str:
+    # return f'<pre>{text}</pre>'
+    return add_tags('pre', text)
+
+
