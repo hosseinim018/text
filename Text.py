@@ -32,5 +32,6 @@ def Mono(text: str) -> str:
 
 def Strikethrough(text: str) -> str:
     return add_tags('s', text)
-
+def Underline(text: str) -> str:
+    return add_tags('u', text)
 
