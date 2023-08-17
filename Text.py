@@ -35,3 +35,20 @@ def Strikethrough(text: str) -> str:
 def Underline(text: str) -> str:
     return add_tags('u', text)
 
+def CreateLink(text: str, link: str) -> str:
+    """
+    Creates a hyperlink by combining the given text and link.
+
+    Parameters:
+    text (str): The text to be displayed for the hyperlink.
+    link (str): The URL or link to be associated with the text.
+
+    Returns:
+    str: The formatted hyperlink.
+
+    Example:
+    >>> CreateLink('OpenAI', 'https://openai.com')
+    '[OpenAI](https://openai.com)'
+    """
+    return f'<a href="{link}">{text}</a>'
+
