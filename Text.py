@@ -67,3 +67,19 @@ def Hashtag(text: str) -> str:
     '#AI'
     """
     return "#" + text
+
+def Mention(text: str) -> str:
+    """
+    Adds an at symbol before the given text.
+
+    Parameters:
+    text (str): The text to which the at symbol is added.
+
+    Returns:
+    str: The text with the at symbol added.
+
+    Example:
+    >>> User('JohnDoe')
+    '@JohnDoe'
+    """
+    return "@" + text
